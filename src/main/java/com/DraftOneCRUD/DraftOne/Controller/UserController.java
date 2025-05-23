@@ -55,8 +55,8 @@ public class UserController {
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable long id){
 
-        repository.findById(id)
-                        .orElseThrow(() -> new RuntimeException("User Not found"));
+//        repository.findById(id)
+//                        .orElseThrow(() -> new RuntimeException("User Not found"));
 
         repository.deleteById(id);
     }
